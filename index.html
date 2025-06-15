@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Model World CTT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #111;
+      color: #eee;
+    }
+    header {
+      background-color: #222;
+      text-align: center;
+      padding: 50px 20px;
+      animation: fadeIn 2s ease;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      animation: fadeInUp 1s ease;
+    }
+    section h2 {
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background-color: #1c1c1c;
+      border: 1px solid #333;
+      padding: 15px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+    }
+    .project-card h3 {
+      margin-top: 0;
+    }
+    .project-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+    }
+    .project-card img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #222;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+      color: #888;
+      animation: fadeIn 2s ease;
+    }
+    a {
+      color: #4ea1ff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #6fbfff;
+    }
+    .social-icons a {
+      margin-right: 15px;
+      font-size: 1.5rem;
+      color: #4ea1ff;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #6fbfff;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chuyên gia 3D Modeling</h1>
+    <p>In 3D nhân vật hoạt hình, anime, linh vật & người nổi tiếng theo yêu cầu</p>
+  </header>
+
+  <section>
+    <h2>Giới thiệu</h2>
+    <p>Chúng tôi chuyên cung cấp các sản phẩm in 3D cho fan anime, hoạt hình, game hoặc nhân vật nổi tiếng. Chất lượng và chi tiết là ưu tiên hàng đầu trong từng sản phẩm.</p>
+  </section>
+
+  <section>
+    <h2>Dự án nổi bật</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="fjqwqn.jpg" alt="Iron Man">
+        <h3>Iron Man Armor</h3>
+        <p>Mô hình chi tiết cao, hoàn thiện bằng sơn bóng cao cấp.</p>
+        <p><strong>Giá bán:</strong> 200.000 VNĐ</p>
+      </div>
+      <div class="project-card">
+        <h3>Goku Super Saiyan</h3>
+        <p>Mô hình tỉ lệ 1:6, chi tiết cao, tạo dáng động.</p>
+      </div>
+      <div class="project-card">
+        <h3>Pikachu Cosplay Naruto</h3>
+        <p>Mẫu vui nhộn, được cộng đồng yêu thích trên Instagram.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Liên hệ</h2>
+    <p>Email: <strong>nguyenthang30999@gmail.com</strong></p>
+    <div class="social-icons">
+      <a href="https://zalo.me/0339529439" target="_blank" title="Zalo"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" style="width:24px; vertical-align:middle; margin-right:8px;"></a>
+      <a href="https://www.facebook.com/thang.nguyen.999767/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Chuyên gia 3D Modeling. All rights reserved.
+  </footer>
+</body>
+</html>
