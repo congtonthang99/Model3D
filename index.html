@@ -95,15 +95,22 @@
       color: #6fbfff;
     }
     .social-icons a {
-      margin-right: 15px;
-      font-size: 1.5rem;
-      color: #4ea1ff;
-      transition: color 0.3s;
+  margin-right: 15px;
+  font-size: 1.5rem;
+  color: #4ea1ff;
+  transition: color 0.3s;
+  animation: bounce 2s infinite;
     }
     .social-icons a:hover {
       color: #6fbfff;
     }
-      
+      @keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }   
   header h1,
 header p {
   position: relative;
